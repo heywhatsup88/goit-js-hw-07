@@ -53,13 +53,13 @@ function onGalleryClick(event) {
   )}" alt="${event.target.getAttribute("alt")}"/></a>
 </div>
     `;
-
-  let gallery = new SimpleLightbox(".gallery a", {
-    captionsData: "alt",
-    captionDelay: 250,
-    showCounter: false,
-  });
-  gallery.on("show.simplelightbox");
 }
+
+let gallery = new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
+  captionDelay: 250,
+  showCounter: false,
+});
+gallery.on("show.simplelightbox");
 
 // console.log(galleryMarkup);
