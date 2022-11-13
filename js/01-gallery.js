@@ -12,8 +12,8 @@ function createGalleryCardMarkup(galleryItem) {
                 <a class="gallery__link" href="${original}">
                     <img
                         class="gallery__image"
-                        src="${original}"
-                        data-source="${preview}"
+                        src="${preview}"
+                        data-source="${original}"
                         alt="${description}"
                     />
                 </a>
@@ -41,8 +41,10 @@ function onGalleryClick(event) {
   // basicLightbox
 
   const instance = basicLightbox.create(`
-    <img src="${event.target.getAttribute("src")}">
+    <img src="${event.target.dataset.source}">
 `);
+
+  console.log(instance);
 
   instance.show();
 

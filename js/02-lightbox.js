@@ -61,6 +61,6 @@ let gallery = new SimpleLightbox(".gallery a", {
   showCounter: false,
 });
 
-// gallery.on("show.simplelightbox");
+gallery.on("show.simplelightbox");
 
 // console.log(galleryMarkup);
