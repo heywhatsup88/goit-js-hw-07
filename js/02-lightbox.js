@@ -60,6 +60,7 @@ let gallery = new SimpleLightbox(".gallery a", {
   captionDelay: 250,
   showCounter: false,
 });
-gallery.on("show.simplelightbox");
+
+// gallery.on("show.simplelightbox");
 
 // console.log(galleryMarkup);
