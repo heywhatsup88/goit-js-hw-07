@@ -48,9 +48,9 @@ function onGalleryClick(event) {
   )}" alt="${event.target.getAttribute("alt")}" /></a>
     <a href="${event.target.getAttribute(
       "href"
-    )}"><img src="images/thumbs/thumb2.jpg" alt="${event.target.getAttribute(
-    "alt"
-  )}"/></a>
+    )}"><img src="${event.target.getAttribute(
+    "src"
+  )}" alt="${event.target.getAttribute("alt")}"/></a>
 </div>
     `;
 
